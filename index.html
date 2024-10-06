@@ -1,13 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Douglas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte do Projeto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Meu Portfólio</title>
 </head>
+
 <body>
-    <header><h1>Meu portifolio</h1></header>
-    <section></section>
+    <!-- Menu -->
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
+        <h1 class="cabecalho__titulo">Douglas Bitencourt Cardoso</h1>
+        <nav class="navegacao">
+            <ul class="navegacao__lista">
+                <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
+                <li class="navegacao__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacao__elemento"><a href="#hobbies">Hobbies</a></li>
+                <li class="navegacao__elemento"><a href="#formação">Formação</a></li>
+                <li class="navegacao__elemento"><a href="#projetos">Projetos</a></li>
+                <li class="navegacao__elemento"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section class="apresentacao">
+        <img class="apresentacao__foto" src="assets/profile.png" alt="Foto de perfil">
+        <div class="apresentacao__conteiner">
+            <h2 class="apresentacao__titulo">Olá, meu nome é Douglas Bitencourt sou empresario, atleta de Jiu-Jitsu e
+                acima de tudo apaixonado por tecnologias.</h2>
+            <p class="apresentacao__subtitulo">Minha formação acadêmica e profissional é atualizada e alinhada às
+                demandas tecnológicas modernas. Sou formado em Processos Gerenciais, com pós-graduação em
+                Desenvolvimento Web Full Stack, ou que me proporcionou um conhecimento abrangente no desenvolvimento de
+                aplicações para diferentes plataformas. Além disso, possuo um MBA em Cibersegurança e Cibercrimes, o que
+                me capacita a entender e lidar com os desafios atuais de segurança digital, garantindo uma proteção
+
+                Minha trajetória técnica inclui uma formação pela Fundação Unisul, onde estudei Java, Flutter e Banco de
+                Dados, fortalecendo minha expertise em desenvolvimento de software. Também fui aluno do projeto Entra 21
+                Técnico, onde me especializei em Python com o uso do framework Django. Durante todo esse percurso,
+                sempre apliquei metodologias ágeis, utilizando Git e GitHub para o gerenciamento de projetos e controle
+                de versões, garantindo a eficiência e a colaboração em cada fase </p>
+            <ul class="redes">
+                <li class="redes__elemento"><a href="https://github.com/bitencourtdoug" target="_blank">GitHub<img
+                            src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="https://www.linkedin.com/in/bitencourtdoug/"
+                        target="_blank">Linkedim<img src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="https://www.instagram.com/bitencourtdoug/"
+                        target="_blank">Instagram<img src="assets/arrow.png" alt="Seta"></a></li>
+                <li class="redes__elemento"><a href="mailto:douglasbitencourtadm@gmail.com" target="_blank">Email<img
+                            src="assets/arrow.png" alt="Seta"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre-mim" class="sobre-mim">
+        <h2 class="sobre-mim__titulo">Sobre Mim</h2>
+        <p class="sobre-mim__texto">Sou um empresário e atleta de Jiu-Jitsu com paixão por tecnologia e inovação.
+            Participei ativamente do desenvolvimento de soluções na Entra 21 Técnico, onde criei produtos para web,
+            mobile e desktop, utilizando metodologias ágeis e ferramentas como Git e GitHub. Meu foco é facilitar o
+            crescimento e o desenvolvimento profissional de outras pessoas, ajudando-as a alcançar
+
+            Valorizar o caráter e combater a injustiça são princípios que carregamos em tudo o que fazemos. No campo
+            pessoal, além de ser um atleta dedicado, sou apaixonado por atividades físicas, séries, filmes e animes.
+            Cozinhar é uma forma de me conectar com as pessoas, promovendo momentos de troca e boas conversas. Sou
+            movido pela busca constante de conhecimento, seja no âmbito profissional, seja na vida cotidiana, onde me
+            procure sempre desafiar e melhorar</p>
+        <p class="sobre-mim__texto">Sou formado por instituições reconhecidas como a Fundação Unisul, Bluesoft, Unopar e
+            Fucap-Univinte, onde desenvolvi uma base sólida de conhecimento e habilidades em tecnologia, com foco no
+            desenvolvimento de software e metodologias ágei
+            <!-- Assinatura opcional -->
+            <!-- <img class="sobre-mim__assinatura" src="assets/signature.png" alt="Assinatura"> -->
+    </section>
+
+    <!-- Seção de Habilidade -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidade</h2>
+        <ul class="habilidades__lista">
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/htlm.png" alt="HTML">
+                <p class="habilidades__nome">HTML 5</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/js_icon.png" alt="JavaScript">
+                <p class="habilidades__nome">JavaScript</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/python.png" alt="Python">
+                <p class="habilidades__nome">PHP</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/java.png" alt="Java">
+                <p class="habilidades__nome">Node.js</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/flutter.png" alt="Flutter">
+                <p class="habilidades__nome">React</p>
+            </li>
+            <li class="habilidades__elemento">
+                <img class="habilidades__icone" src="assets/css_icon.png" alt="CSS">
+                <p class="habilidades__nome">CSS</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção de Hobbies -->
+    <section class="hobbies" id="hobbies">
+        <h2 class="hobbies__titulo">Hobbies</h2>
+        <ul class="hobbies__lista">
+            <li class="hobbies__elemento">
+                <img class="hobbies__icone" src="assets/tv_icon.png" alt="Séries/Filmes/Anime">
+                <p class="hobbies__nome">Assistir Séries/Filmes/Anime</p>
+            </li>
+            <li class="hobbies__elemento">
+                <img class="hobbies__icone" src="assets/jiujitsu.png" alt="Jiu-jitsu">
+                <p class="hobbies__nome">Jiu-jitsu</p>
+            </li>
+            <li class="hobbies__elemento">
+                <img class="hobbies__icone" src="assets/musculacao.png" alt="Musculação">
+                <p class="hobbies__nome">Musculação</p>
+            </li>
+            <li class="hobbies__elemento">
+                <img class="hobbies__icone" src="assets/natacao.png" alt="Natação / Esportes">
+                <p class="hobbies__nome">Natação / Esportes</p>
+            </li>
+            <li class="hobbies__elemento">
+                <img class="hobbies__icone" src="assets/praia.png" alt="Praia">
+                <p class="hobbies__nome">Praia</p>
+            </li>
+            <li class="hobbies__elemento">
+                <img class="hobbies__icone" src="assets/forkspoon_icon.png" alt="Cozinhar">
+                <p class="hobbies__nome">Cozinhar</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção de Formação Acadêmica -->
+    <section class="formacao" id="formacao">
+        <h2 class="formacao__titulo">Formação Acadêmica</h2>
+        <ul class="formacao__lista">
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/fucap.png" alt="Fucap-Univinte">
+                <div>
+                    <h3 class="formacao__nome">Processos Gerencias-ADM</h3>
+                    <p class="formacao__detalhe">2022 - Fucap-Univinte</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/unisul.png" alt="Fundação Unisul">
+                <div>
+                    <h3 class="formacao__nome">Java Full Stack</h3>
+                    <p class="formacao__detalhe">2022 - Fundação Unisul</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/entra21.png" alt="Bluesoft - Entra 21">
+                <div>
+                    <h3 class="formacao__nome">Python Full Stack</h3>
+                    <p class="formacao__detalhe">2022 - Bluesoft</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/udemy.png" alt="Udemy">
+                <div>
+                    <h3 class="formacao__nome">Python - Basico ao Avançado</h3>
+                    <p class="formacao__detalhe">2024 - Udemy</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/alura.png" alt="Alura">
+                <div>
+                    <h3 class="formacao__nome">Programa One</h3>
+                    <p class="formacao__detalhe">2024 - Alura</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/unopar.png" alt="Unopar">
+                <div>
+                    <h3 class="formacao__nome">Pós-graduação Desenvolvimento web Full Stack</h3>
+                    <p class="formacao__detalhe">Comcluido 2024 - Unopar</p>
+                </div>
+            </li>
+            <li class="formacao__elemento">
+                <img class="formacao__icone" src="assets/unopar.png" alt="Unopar">
+                <div>
+                    <h3 class="formacao__nome">MBA em Cybersecurity e Cybercrimes </h3>
+                    <p class="formacao__detalhe">Comcluido 2024 - Unopar</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section class="projetos" id="projetos">
+        <h2 class="projetos__titulo">Experiência Profissional</h2>
+        <div class="projetos__conteiner">
+            <h3 class="projetos__nome">Título da Experiência</h3>
+            <p class="projetos__descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam
+                unde repudiandae fugiat, earum temporibus!</p>
+        </div>
+        <div class="projetos__conteiner">
+            <h3 class="projetos__nome">Título da Experiência</h3>
+            <p class="projetos__descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam
+                unde repudiandae fugiat, earum temporibus!</p>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contato">
+        <h2 class="contato__titulo">Entre em Contato</h2>
+        <form class="contato__formulario">
+            <input type="text" id="nome" class="contato__campo" placeholder="Nome">
+            <span class="error-message" style="display: none; color: red;"></span>
+
+            <input type="email" id="email" class="contato__campo" placeholder="Email">
+            <span class="error-message" style="display: none; color: red;"></span>
+
+            <input type="text" id="assunto" class="contato__campo" placeholder="Assunto">
+            <span class="error-message" style="display: none; color: red;"></span>
+
+            <button type="submit" class="contato__botao">Enviar</button>
+        </form>
+    </section>
+
+
     <footer></footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
