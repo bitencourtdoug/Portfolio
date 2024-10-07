@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.contato__formulario');
-    const nameField = document.querySelector('#nome');
+    const nameField = document.querySelector('#name');
     const emailField = document.querySelector('#email');
     const subjectField = document.querySelector('#assunto');
     const submitButton = document.querySelector('.contato__botao');
+
+    // Inicializa o EmailJS com a chave pública
+    emailjs.init("SAgm-Y4bhDTGEYIn-"); // Substitua pela sua chave pública
 
     // Função para mostrar mensagens de erro
     function showError(field, message) {
@@ -64,6 +67,23 @@ document.addEventListener('DOMContentLoaded', function () {
         return true;
     }
 
+    // Função para enviar o email com EmailJS
+    function sendEmail() {
+        const templateParams = {
+            nome: nameField.value,
+            email: emailField.value,
+            assunto: subjectField.value
+        };
+
+        emailjs.send('service_fn8j5v5', 'template_adbrcjx', templateParams)
+            .then(function(response) {
+                alert('Email enviado com sucesso!', response.status, response.text);
+                form.reset(); // Reseta o formulário após o envio
+            }, function(error) {
+                alert('Falha ao enviar o email. Tente novamente.', error);
+            });
+    }
+
     // Evento de clique no botão de envio
     submitButton.addEventListener('click', function (event) {
         event.preventDefault();
@@ -74,8 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Se todos os campos forem válidos, envie o formulário
         if (isNameValid && isEmailValid && isSubjectValid) {
-            alert('Formulário enviado com sucesso!');
-            form.submit(); // Realiza o envio do formulário
+            sendEmail(); // Envia o email
         }
     });
 
@@ -83,4 +102,13 @@ document.addEventListener('DOMContentLoaded', function () {
     nameField.addEventListener('blur', validateName);
     emailField.addEventListener('blur', validateEmail);
     subjectField.addEventListener('blur', validateSubject);
+});
+
+// JavaScript para o menu hamburguer
+const hamburguer = document.querySelector('.menu-hamburguer');
+const navegacao = document.querySelector('.navegacao');
+
+hamburguer.addEventListener('click', () => {
+    hamburguer.classList.toggle('active');
+    navegacao.classList.toggle('active');
 });

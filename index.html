@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Biblioteca EmailUS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("SAgm-Y4bhDTGEYIn-"); // Substitua pelo chave pública. 
+        })();
+    </script>
+
     <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Meu Portfólio</title>
@@ -18,12 +26,13 @@
     <header class="cabecalho">
         <img class="cabecalho__logo" src="assets/vector.png" alt="Logo">
         <h1 class="cabecalho__titulo">Douglas Bitencourt Cardoso</h1>
+        <span class="menu-hamburguer">&#9776;</span> <!-- Ícone do menu hamburguer -->
         <nav class="navegacao">
             <ul class="navegacao__lista">
                 <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
                 <li class="navegacao__elemento"><a href="#habilidades">Habilidades</a></li>
                 <li class="navegacao__elemento"><a href="#hobbies">Hobbies</a></li>
-                <li class="navegacao__elemento"><a href="#formação">Formação</a></li>
+                <li class="navegacao__elemento"><a href="#formacao">Formação</a></li>
                 <li class="navegacao__elemento"><a href="#projetos">Projetos</a></li>
                 <li class="navegacao__elemento"><a href="#contato">Contato</a></li>
             </ul>
@@ -202,22 +211,18 @@
     <section class="projetos" id="projetos">
         <h2 class="projetos__titulo">Experiência Profissional</h2>
         <div class="projetos__conteiner">
-            <h3 class="projetos__nome">Título da Experiência</h3>
-            <p class="projetos__descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam
-                unde repudiandae fugiat, earum temporibus!</p>
-        </div>
-        <div class="projetos__conteiner">
-            <h3 class="projetos__nome">Título da Experiência</h3>
-            <p class="projetos__descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam
-                unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="projetos__nome">Decodificador de texto</h3>
+            <p class="projetos__descricao">Projeto desenvolvido para o Programa ONE - Oracle Next Education, sendo o
+                Challenge do curso final.</p>
+                <a class="projetos__imagem" target="_blank" href="https://github.com/bitencourtdoug/projeto-decodificador"><img src="assets/Home.png" alt="Pagina inicial do Projeto decodificador"></a>
         </div>
     </section>
 
     <!-- Seção de Contato -->
-    <section class="contato">
+    <section class="contato" id="contato">
         <h2 class="contato__titulo">Entre em Contato</h2>
         <form class="contato__formulario">
-            <input type="text" id="nome" class="contato__campo" placeholder="Nome">
+            <input type="text" id="name" class="contato__campo" placeholder="Nome">
             <span class="error-message" style="display: none; color: red;"></span>
 
             <input type="email" id="email" class="contato__campo" placeholder="Email">
@@ -230,9 +235,13 @@
         </form>
     </section>
 
-
-    <footer></footer>
+    <!-- Importando o script.js -->
     <script src="script.js"></script>
+
+    <footer class="footer">
+        <p>Desenvolvido por Douglas Bitencourt</p>        
+    </footer>
+
 </body>
 
 </html>
